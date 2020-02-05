@@ -36,10 +36,10 @@ LXQtPanelPlugin > QToolButton
 {
 	margin:			2px;
 	padding:		4px;
-	/*background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #4892f7, stop:0.2 #488cf6, stop:0.3 #3d81f3, stop:1.0 #316ce4);*/
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #636163, stop:0.2 #393c39, stop:0.3 #313031, stop:1.0 #316ce4);
-	color:			rgba(255, 255, 255, 80%);
-	border:			1px solid #0842a3;
+	/*background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #636163, stop:0.2 #393c39, stop:0.3 #313031, stop:1.0 #316ce4);*/
+	background:		qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.1 #6b696b, stop:0.2 #525552, stop:0.3 #393839, stop:0.9 #313431, stop:1.0 #292829);
+	color:			rgba(255, 255, 255, 90%);
+	border:			1px solid #474747;
 	border-radius:		3px;
 }
 
@@ -47,9 +47,10 @@ LXQtPanelPlugin > QToolButton
 {
 	margin:			2px;
 	padding:		4px;
-	background-color:	rgba(0, 0, 0, 20%);
+	/*background-color:	rgba(0, 0, 0, 20%);*/
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.1 #393c39, stop:0.2 #313431, stop:0.3 #181c18, stop:0.9 #101410);
 	color:			rgba(255, 255, 255, 100%);
-	border:			1px solid #0842a3;
+	border:			1px solid #000000;
 	border-radius:		3px;
 }
 
