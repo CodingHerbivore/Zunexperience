@@ -126,31 +126,31 @@ LXQtPanelPlugin > QToolButton
 #MainMenu
 {
 	qproperty-icon:				url(mainmenu.svg);
-	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #57a057, stop:0.2 #79b679, stop:0.3 #55a355, stop:0.7 #49af49, stop:0.8 #459c45, stop:1.0 #398339);
+	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #ffac78, stop:0.2 #fa8d4a, stop:0.3 #e47734, stop:0.7 #b64906, stop:0.8 #be510e, stop:1.0 #d16421);
 	color:					rgba(255, 255, 255, 100%);
-	border:					2px solid rgba(31, 97, 31, 20%); 
-	border-top-right-radius:		6px;
-	border-bottom-right-radius:		6px;
+	border-right:					2px solid #51504f; 
+	border-top-right-radius:		12px;
+	border-bottom-right-radius:		12px;
 	margin:					0px;
 	padding:				0px;
 }
 
 #MainMenu:hover
 {
-	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #67b067, stop:0.2 #89c689, stop:0.3 #65b365, stop:0.7 #59bf59, stop:0.8 #55ac55, stop:1.0 #499349);
-	border:					2px solid rgba(31, 97, 31, 20%); 
-	border-top-right-radius:		6px;
-	border-bottom-right-radius:		6px;
+	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #ffac78, stop:0.2 #fa8d4a, stop:0.3 #ec884b, stop:0.7 #c35c1c, stop:0.8 #c96222, stop:1.0 #cb682b);
+	border-right:					2px solid #51504f; 
+	border-top-right-radius:		12px;
+	border-bottom-right-radius:		12px;
 	margin:					0px;
 	padding:				0px;
 }
 
 #MainMenu:pressed
 {
-	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #479047, stop:0.2 #69a669, stop:0.3 #459345, stop:0.7 #399f39, stop:0.8 #358c35, stop:1.0 #297329);
-	border:					2px solid rgba(31, 97, 31, 20%); 
-	border-top-right-radius:		6px;
-	border-bottom-right-radius:		6px;
+	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #ffac78, stop:0.2 #fa8d4a, stop:0.3 #e47734, stop:0.7 #a44104, stop:0.8 #b04707, stop:1.0 #c55916);
+	border:					3px solid #51504f;; 
+	border-top-right-radius:		12px;
+	border-bottom-right-radius:		12px;
 	margin:					0px;
 	padding:				0px;
 }
