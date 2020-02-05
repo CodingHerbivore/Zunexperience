@@ -159,9 +159,9 @@ LXQtPanelPlugin > QToolButton
 /* The actual menu... */
 #MainMenu QMenu
 {
-	background:		#eeecdd;
-	color:			#000000;
-	border:			1px solid #dddbcc;
+	background:		#2f2f2f;
+	color:			#ffffff;
+	border:			1px solid #0d0c0a;
 	margin-right:		0px;
 	padding:		1px;
 }
@@ -181,8 +181,8 @@ LXQtPanelPlugin > QToolButton
 
 #MainMenu QMenu::item:selected
 {
-	background-color:	#1e50c4;
-	color:			#ffffff;
+	background-color:	#bdbec0;
+	color:			#000000;
 }
 
 
