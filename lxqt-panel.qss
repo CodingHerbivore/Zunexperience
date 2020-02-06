@@ -38,7 +38,7 @@ LXQtPanelPlugin > QToolButton
 	padding:		4px;
 	/*background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #636163, stop:0.2 #393c39, stop:0.3 #313031, stop:1.0 #316ce4);*/
 	background:		qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.1 #6b696b, stop:0.2 #525552, stop:0.3 #393839, stop:0.9 #313431, stop:1.0 #292829);
-	color:			rgba(255, 255, 255, 90%);
+	color:			#ffffff;
 	border:			1px solid #474747;
 	border-radius:		3px;
 }
@@ -60,7 +60,7 @@ LXQtPanelPlugin > QToolButton
 	padding:		4px;
 	background-color:	rgba(255, 255, 255, 20%);
 	color:			rgba(255, 255, 255, 100%);
-	border:			1px solid #0842a3;
+	border:			2px solid #000000;
 	border-radius:		3px;
 }
 
@@ -128,6 +128,7 @@ LXQtPanelPlugin > QToolButton
 	qproperty-icon:				url(mainmenu.svg);
 	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #ffac78, stop:0.2 #fa8d4a, stop:0.3 #e47734, stop:0.7 #b64906, stop:0.8 #be510e, stop:1.0 #d16421);
 	color:					rgba(255, 255, 255, 100%);
+	text-shadow:			2px 2px #ff0000;
 	border-right:					2px solid #51504f; 
 	border-top-right-radius:		12px;
 	border-bottom-right-radius:		12px;
@@ -214,4 +215,85 @@ LXQtPanelPlugin > QToolButton
 {
 	color:			#ffffff;
 	padding:		5px;
+}
+
+
+/*
+ * Calendar Widget
+ */
+
+QCalendarWidget QAbstractItemView:enabled {
+    color: #FFFFFF;
+    selection-color: #000000;
+}
+
+QCalendarWidget QAbstractItemView:disabled {
+    color: #5d5f60;
+}
+
+QCalendarWidget QWidget {
+    alternate-background-color: #2f2f2f;
+    alternate-color: #ffffff;
+    color: #ffffff;
+    border: 1px solid #0d0c0a;
+}
+
+QCalendarWidget #qt_calendar_navigationbar,
+QCalendarWidget #qt_calendar_navigationbar * {
+    background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.1 #393c39, stop:0.2 #313431, stop:0.3 #181c18, stop:0.9 #101410);
+    color: #FFFFFF;
+    border-bottom: none;
+}
+QCalendarWidget #qt_calendar_monthbutton {
+    padding:2px;
+    margin: 2px;
+    border:none;
+}
+
+QCalendarWidget #qt_calendar_monthbutton:pressed {
+   border: none;
+   background: #14a4ec;
+   color: #000000;
+}
+QCalendarWidget #qt_calendar_monthbutton:hover {
+   border: none;
+   background: #eaeaea;
+   color: #000000;
+}
+QCalendarWidget #qt_calendar_monthbutton::menu-indicator {
+   image: none;
+}
+QCalendarWidget #qt_calendar_yearbutton {
+    padding:2px;
+    margin: 2px;
+    border:none;
+}
+QCalendarWidget #qt_calendar_yearbutton:pressed {
+   border: none;
+   background: #14a4ec;
+}   
+QCalendarWidget #qt_calendar_yearbutton:hover {
+   border: none;
+   background: #eaeaea;
+}
+
+QCalendarWidget QTableView {
+	background-color: #2f2f2f; 
+    selection-background-color:#bdbec0;
+    selection-color: #000000;
+}
+QCalendarWidget #qt_calendar_nextmonth {
+    max-height:20px;
+    min-height:20px;
+    qproperty-icon: url(calendar-popup/right-arrow.svg);
+    border: none;
+    border-right: 1px solid #bcbebf;
+    
+}
+QCalendarWidget #qt_calendar_prevmonth {
+    max-height:20px;
+    min-height:20px;
+    qproperty-icon: url(calendar-popup/left-arrow.svg);
+    border:none;
+    border-left: 1px solid #bcbebf;
 }
