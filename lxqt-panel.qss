@@ -7,7 +7,8 @@ Created 1 Mar 2019
 LXQtPanel #BackgroundWidget
 {
 	background-color: 	#313431;
-	background:		qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.1 #6b696b, stop:0.2 #525552, stop:0.3 #393839, stop:0.9 #313431, stop:1.0 #292829);
+	/*background:		qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.4 #6b696b, stop:0.5 #525552, stop:0.6 #393839, stop:0.9 #313431, stop:1.0 #292829);*/
+		background:		qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #6b6d6b, stop:0.5 #393c39, stop:1.0 #292829);
 	border:			1px solid #000000;
 }
 
@@ -26,7 +27,9 @@ LXQtPanelPlugin > QToolButton
 
 	margin:			0;
 	border:			0px;
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.1 #393c39, stop:0.2 #313431, stop:0.3 #181c18, stop:0.9 #101410);
+	/*	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.1 #424142, stop:0.4 #393c39, stop:0.5 #313431, stop:0.6 #181c18, stop:0.9 #101410);*/
+	background:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.5 #181c18, stop:1.0 #101410);
+
 	color:			rgba(238, 238, 238, 100%);
 }
 
@@ -36,8 +39,8 @@ LXQtPanelPlugin > QToolButton
 {
 	margin:			2px;
 	padding:		4px;
-	/*background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #636163, stop:0.2 #393c39, stop:0.3 #313031, stop:1.0 #316ce4);*/
-	background:		qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.1 #6b696b, stop:0.2 #525552, stop:0.3 #393839, stop:0.9 #313431, stop:1.0 #292829);
+	/*background:		qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.1 #6b696b, stop:0.4 #525552, stop:0.5 #393839, stop:0.6 #313431, stop:1.0 #292829);*/
+	background:		qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.0 #6b696b, stop:0.5 #393839, stop:1.0 #292829);
 	color:			#ffffff;
 	border:			1px solid #474747;
 	border-radius:		3px;
@@ -48,7 +51,8 @@ LXQtPanelPlugin > QToolButton
 	margin:			2px;
 	padding:		4px;
 	/*background-color:	rgba(0, 0, 0, 20%);*/
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.1 #393c39, stop:0.2 #313431, stop:0.3 #181c18, stop:0.9 #101410);
+	/*background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.1 #393c39, stop:0.4 #313431, stop:0.5 #181c18, stop:0.9 #101410);*/
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.5 #181c18, stop:1.0 #101410);
 	color:			rgba(255, 255, 255, 100%);
 	border:			1px solid #000000;
 	border-radius:		3px;
@@ -60,7 +64,7 @@ LXQtPanelPlugin > QToolButton
 	padding:		4px;
 	background-color:	rgba(255, 255, 255, 20%);
 	color:			rgba(255, 255, 255, 100%);
-	border:			2px solid #000000;
+	border:			1px solid #000000;
 	border-radius:		3px;
 }
 
@@ -78,10 +82,14 @@ LXQtPanelPlugin > QToolButton
 {
 	margin:			2px;
 	padding:		1px;
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #b76d08, stop:0.2 #b2740e, stop:0.3 #6c7f0b, stop:1.0 #ce9017);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #b76d08, stop:0.4 #b2740e, stop:0.5 #6c7f0b, stop:1.0 #ce9017);
 	color:			rgba(255, 255, 255, 100%);
 	border:			1px solid #000000;
 	border-radius:		3px;
+}
+#TaskBar LXQtGroupPopup {
+    background:#2f2f2f;
+    border: 1px solid #000000;
 }
 
 /* Quick Launch (Icon bar) */
@@ -115,8 +123,9 @@ LXQtPanelPlugin > QToolButton
 #QuickLaunch QToolButton:hover
 {
 	color:			rgba(255, 255, 255, 100%);
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #4892f7, stop:0.2 #488cf6, stop:0.3 #3d81f3, stop:1.0 #316ce4);
-	border:			1px solid #0842a3;
+	/*background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #4892f7, stop:0.4 #488cf6, stop:0.5 #3d81f3, stop:1.0 #316ce4);*/
+	background-color:			rgba(255, 255, 255, 20%);
+	border:			1px solid #000000;
 	border-radius:		3px;
 	margin:			0px;
 	padding:		2px;
@@ -126,7 +135,9 @@ LXQtPanelPlugin > QToolButton
 #MainMenu
 {
 	qproperty-icon:				url(mainmenu.svg);
-	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #ffac78, stop:0.2 #fa8d4a, stop:0.3 #e47734, stop:0.7 #b64906, stop:0.8 #be510e, stop:1.0 #d16421);
+	/*background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #d66921, stop:0.4 #bd4908, stop:0.5 #7b3000, stop:0.6 #732c00, stop:1.0 #a53c00);*/
+
+	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.0 #d66921, stop:0.5 #7b3000, stop:1.0 #a53c00);
 	color:					rgba(255, 255, 255, 100%);
 	text-shadow:			2px 2px #ff0000;
 	border-right:					2px solid #51504f; 
@@ -134,26 +145,33 @@ LXQtPanelPlugin > QToolButton
 	border-bottom-right-radius:		12px;
 	margin:					0px;
 	padding:				0px;
+	padding-left:			7px;
+	padding-right: 			7px;
 }
 
 #MainMenu:hover
 {
-	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #ffac78, stop:0.2 #fa8d4a, stop:0.3 #ec884b, stop:0.7 #c35c1c, stop:0.8 #c96222, stop:1.0 #cb682b);
+	/*background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #ffac78, stop:0.4 #fa8d4a, stop:0.5 #ec884b, stop:0.6 #c35c1c, stop:1.0 #cb682b);*/
+	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.0 #ffac78, stop:0.5 #ec884b, stop:1.0 #cb682b);
 	border-right:					2px solid #51504f; 
 	border-top-right-radius:		12px;
 	border-bottom-right-radius:		12px;
 	margin:					0px;
 	padding:				0px;
+	padding-left:			7px;
+	padding-right: 			7px;
 }
 
 #MainMenu:pressed
 {
-	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #ffac78, stop:0.2 #fa8d4a, stop:0.3 #e47734, stop:0.7 #a44104, stop:0.8 #b04707, stop:1.0 #c55916);
+	background-color:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0.1 #ffac78, stop:0.4 #fa8d4a, stop:0.5 #e47734, stop:0.6 #a44104, stop:1.0 #c55916);
 	border:					3px solid #51504f;; 
 	border-top-right-radius:		12px;
 	border-bottom-right-radius:		12px;
 	margin:					0px;
 	padding:				0px;
+	padding-left:			7px;
+	padding-right: 			7px;
 }
 
 
@@ -191,7 +209,7 @@ LXQtPanelPlugin > QToolButton
 #Tray
 {
 	/*background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #16adf0, stop:0.1 #19b9f3, stop:0.2 #1399eb, stop:0.3 #0d8dea, stop:0.9 #1393e5);*/
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.1 #393c39, stop:0.2 #313431, stop:0.3 #181c18, stop:0.9 #101410);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.5 #181c18, stop:1.0 #101410);
 	min-width:		0px;
 	padding:		8px;
 }
@@ -208,7 +226,7 @@ LXQtPanelPlugin > QToolButton
 #WorldClock
 {
 	/* background:		qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #16adf0, stop:0.1 #19b9f3, stop:0.2 #1399eb, stop:0.3 #0d8dea, stop:0.9 #1393e5);*/
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.1 #393c39, stop:0.2 #313431, stop:0.3 #181c18, stop:0.9 #101410);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.5 #181c18, stop:1.0 #101410);
 }
 
 #WorldClockContent
@@ -240,7 +258,7 @@ QCalendarWidget QWidget {
 
 QCalendarWidget #qt_calendar_navigationbar,
 QCalendarWidget #qt_calendar_navigationbar * {
-    background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.1 #393c39, stop:0.2 #313431, stop:0.3 #181c18, stop:0.9 #101410);
+    background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #424142, stop:0.5 #181c18, stop:1.0 #101410);
     color: #FFFFFF;
     border-bottom: none;
 }
